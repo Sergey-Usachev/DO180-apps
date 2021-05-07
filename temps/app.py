@@ -1,9 +1,13 @@
+import flask
 
-from flask import Flask           # import flask
-app = Flask(__name__)             # create an app instance
+from .config import register_config
 
-@app.route("/")                   # at the end point /
-def hello():                      # call method hello
-    return "Hello World!"         # which returns "hello world"
-if __name__ == "__main__":        # on running python app.py
-    app.run()                     # run the flask app
+
+app = flask.Flask(__name__)
+
+register_config(app)
+
+
+@app.route('/')
+def homepage() -> str:
+    return flask.render_template('index.html')

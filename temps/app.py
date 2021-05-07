@@ -1,4 +1,3 @@
-pip install Flask==1.1.2
 
 from flask import Flask           # import flask
 app = Flask(__name__)             # create an app instance

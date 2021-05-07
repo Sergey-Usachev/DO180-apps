@@ -1,6 +1,6 @@
 <html>
 <head>
-      <title>Converting Temperatures</title>
+      <title>Converting Temperatures Конвертирование температур изменено Усачевым</title>
       <meta charset="utf-8">
 </head>
 <body>
@@ -16,8 +16,8 @@
     <td>Convert to:</td>
     <td><select name="scale" id="scale" size="1">
                <option disabled>Select the scale</option>
-               <option value="c">Celsius</option>
-               <option value="f">Fahrenheit</option>
+               <option value="c">Celsius Цельсий</option>
+               <option value="f">Fahrenheit Фаренгейт</option>
         </select>
     </td>
 </tr>
@@ -45,7 +45,7 @@ if (isset($_POST['btnConvert'])) {
 $temp = $_POST['temp'];
 $scale = $_POST['scale'];
 $converted = convert($temp, $scale);
-echo "The original temperature, $temp, converted is $converted.";
+echo "The original temperature Оригинальная , $temp, converted is переведено в $converted.";
 }
 ?>
 

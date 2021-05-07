@@ -1,1 +1,1 @@
-println "Usachev text"
+print ("Usachev text")
